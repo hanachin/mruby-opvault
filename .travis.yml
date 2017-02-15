@@ -1,0 +1,9 @@
+language: c
+compiler:
+  - gcc
+before_install:
+    - sudo apt-get -qq update
+install:
+    - sudo apt-get -qq install rake bison git gperf
+script:
+  - ./test.sh
